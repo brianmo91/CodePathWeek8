@@ -72,5 +72,3 @@ Vulnerability #2: Cross-Site Request Forgery (CSRF)
 <img src="https://raw.githubusercontent.com/cheezm91/CodePathWeek8/master/csrf.gif">
 
 ## Notes
-
-Describe any challenges encountered while doing the work
