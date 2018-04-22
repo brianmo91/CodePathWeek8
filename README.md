@@ -71,4 +71,11 @@ Vulnerability #2: Cross-Site Request Forgery (CSRF)
 
 <img src="https://raw.githubusercontent.com/cheezm91/CodePathWeek8/master/csrf.gif">
 
+## Bonus Objectives
+
+Bonus Objective 2: Build on Objective #4 (Cross-Site Scripting). Experiment to see if you can use XSS to: a) direct the user to a new URL, b) read cookie data, c) set cookie data.
+* Inject the script ```<script>document.location = "https://google.com";</script>``` into feedback form. When a logged in user checks the feedback, the script will redirect them to https://google.com
+
+<img src="https://raw.githubusercontent.com/cheezm91/CodePathWeek8/master/bonus2a.gif">
+
 ## Notes
