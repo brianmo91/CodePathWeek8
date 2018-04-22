@@ -16,10 +16,13 @@ Each version of the site has been given two of the six vulnerabilities. (In othe
 
 ## Blue
 
-Vulnerability #1: __________________
+Vulnerability #1: SQL Injection (SQLi)
+
+<img src="https://raw.githubusercontent.com/cheezm91/CodePathWeek8/master/sqlinject.gif">
 
 Vulnerability #2: __________________
 
+<img src="https://raw.githubusercontent.com/cheezm91/CodePathWeek8/master/userenum.gif">
 
 ## Green
 
@@ -28,15 +31,20 @@ Vulnerability #1: Username Enumeration
 
 <img src="https://raw.githubusercontent.com/cheezm91/CodePathWeek8/master/userenum.gif">
 
-Vulnerability #2: __________________
+Vulnerability #2: Cross-Site Scripting (XSS)
+
+<img src="https://raw.githubusercontent.com/cheezm91/CodePathWeek8/master/xss.gif">
 
 
 ## Red
 
-Vulnerability #1: __________________
+Vulnerability #1: Insecure Direct Object Reference (IDOR)
+
+<img src="https://raw.githubusercontent.com/cheezm91/CodePathWeek8/master/idor.gif">
 
 Vulnerability #2: __________________
 
+<img src="https://raw.githubusercontent.com/cheezm91/CodePathWeek8/master/userenum.gif">
 
 ## Notes
 
