@@ -1,6 +1,6 @@
 # Project 8 - Pentesting Live Targets
 
-Time spent: **X** hours spent in total
+Time spent: **8** hours spent in total
 
 > Objective: Identify vulnerabilities in three different versions of the Globitek website: blue, green, and red.
 
@@ -17,12 +17,14 @@ Each version of the site has been given two of the six vulnerabilities. (In othe
 ## Blue
 
 Vulnerability #1: SQL Injection (SQLi)
+* Inject SQL code into the URL after "id=" with " 2' and SLEEP(5)=0--' ", which will cause the site to delay for 5 seconds before directing to the other page.
 
 <img src="https://raw.githubusercontent.com/cheezm91/CodePathWeek8/master/sqlinject.gif">
 
-Vulnerability #2: __________________
+Vulnerability #2: Session Hijacking
+* Log in to the page and find the Session ID using the premade script change_session_id.php, then on another browser using the same script, change the Session ID to the one from the previous browser.
 
-<img src="https://raw.githubusercontent.com/cheezm91/CodePathWeek8/master/userenum.gif">
+<img src="https://raw.githubusercontent.com/cheezm91/CodePathWeek8/master/session.gif">
 
 ## Green
 
@@ -32,6 +34,7 @@ Vulnerability #1: Username Enumeration
 <img src="https://raw.githubusercontent.com/cheezm91/CodePathWeek8/master/userenum.gif">
 
 Vulnerability #2: Cross-Site Scripting (XSS)
+* Inject a script through the feedback form and wait for a logged-in user to check it
 
 <img src="https://raw.githubusercontent.com/cheezm91/CodePathWeek8/master/xss.gif">
 
