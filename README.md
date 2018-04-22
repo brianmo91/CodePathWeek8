@@ -23,7 +23,10 @@ Vulnerability #2: __________________
 
 ## Green
 
-Vulnerability #1: __________________
+Vulnerability #1: Username Enumeration
+* When a NON-existing username is entered, the "Log in was unsuccessful." message is unbolded.
+
+<img src="https://raw.githubusercontent.com/cheezm91/CodePathWeek8/master/userenum.gif">
 
 Vulnerability #2: __________________
 
